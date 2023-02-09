@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  height: 55px;
+  width: 270px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.wrapper input {
+  width: 270px;
+  height: 40px;
+  border: 1px solid #8e44ad;
+  padding-left: 15px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+}
+.wrapper input::placeholder {
+  font-size: 17px;
+}
+.wrapper span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #8e44ad;
+  cursor: pointer;
+  display: none;
+}
+.wrapper input:valid ~ span {
+  display: block;
+}
+.wrapper span i.hide-btn::before {
+  content: "\f070";
+}

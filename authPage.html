@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="authPage.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./AuthScript.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img class="logo-img" src="" alt="" />
+      </div>
+      <ul class="header-list">
+        <li class="header-list_item">
+          <a class="header-list_item__link" href="#!">О нас</a>
+        </li>
+        <li class="header-list_item">
+          <a class="header-list_item__link" href="#!">Фотографы</a>
+        </li>
+        <li class="header-list_item">
+          <a class="header-list_item__link" href="#!">Лента</a>
+        </li>
+        <li class="header-list_item">
+          <a class="header-list_item__link" href="#!">Рекомендации</a>
+        </li>
+        <li class="header-list_item">
+          <a class="header-list_item__link" href="#!">Фотолайфхаки</a>
+        </li>
+      </ul>
+      <div class="buttons">
+        <button type="button" class="header-btn">Вход</button>
+        <button type="button" class="header-btn">Регистрация</button>
+      </div>
+    </header>
+    <main>
+      <section class="auth_div">
+        <div class="main_ayth_div">
+          <div class="section_one">
+            <!-- картинка -->
+          </div>
+          <div class="section_two">
+            <h2 class="h2_auth">Впервые у нас?</h2>
+            <p class="p_auth">
+              Откройте для себя мир фотоискусства - зарегистрируйтесь на UrArt
+            </p>
+            <div class="div_pole">
+              <p class="email_p">Адрес электронной почты</p>
+              <input
+                type="text"
+                class="email_text"
+                placeholder="Введите адрес эл.почты"
+              />
+              <p class="pas_p">Пароль</p>
+              <div class="wrapper">
+                <input type="password" placeholder="Введите пароль" />
+                <span class="show-btn"><i class="fas fa-eye"></i></span>
+              </div>
+              <script>
+                const passField = document.querySelector("input");
+                const showBtn = document.querySelector("span i");
+                showBtn.onclick = () => {
+                  if (passField.type === "password") {
+                    passField.type = "text";
+                    showBtn.classList.add("hide-btn");
+                  } else {
+                    passField.type = "password";
+                    showBtn.classList.remove("hide-btn");
+                  }
+                };
+              </script>
+
+              <div class="div_bt_auth">
+                <a class="a_html" href="index.html">Войти</a>
+              </div>
+
+              <p class="p_text">Или войдите через:</p>
+              <div class="roud_btn">
+                <div class="vk"></div>
+                <div class="od"></div>
+                <div class="gogle"></div>
+                <div class="dzen"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div><img class="footer-logo" src="./img/fanta.png" alt="" /></div>
+      <div class="footer-info">
+        <div class="footer-topics">
+          <h3 class="footer_heading">О нас</h3>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Информация о разработчике</a>
+          </p>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Copyright information</a>
+          </p>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Политика конфиденциальности</a>
+          </p>
+        </div>
+        <div class="footer-topics">
+          <h3 class="footer_heading">Посетителям</h3>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Фотографы</a>
+          </p>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Лента</a>
+          </p>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Рекомендации</a>
+          </p>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Помощь</a>
+          </p>
+        </div>
+        <div class="footer-topics">
+          <h3 class="footer_heading">Фотографам</h3>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Статистика профиля</a>
+          </p>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Настройки продвижения</a>
+          </p>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Помощь</a>
+          </p>
+        </div>
+        <div class="footer-topics">
+          <h3 class="footer_heading">Контакты</h3>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Обратная связь</a>
+          </p>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">urart@yandex.ru</a>
+          </p>
+          <p class="footer_text">
+            <a class="footer_text_link" href="">Мы в соцсетях:</a>
+          </p>
+          <div class="footer_social">
+            <div><img src="./img/vk.svg" alt="vkontakte logo" /></div>
+            <div><img src="./img/telegram.svg" alt="telegram logo" /></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
