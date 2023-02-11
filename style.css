@@ -835,3 +835,509 @@ footer {
   display: flex;
   column-gap: 10px;
 }
+
+/* Recomendations */
+
+.recomendations-desc {
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  /* or 112% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  width: 460px;
+}
+
+.recomendations-heading {
+  text-align: left;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  /* or 75% */
+
+  display: flex;
+
+  color: #000000;
+}
+
+.recs_gallery-works {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-gallery {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  display: grid;
+  width: 1080px;
+  /* gap: 20px; */
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-rows: 240px;
+  grid-template-areas:
+    "photo1 photo1 photo2 photo3"
+    "photo4 photo5 photo2 photo3"
+    "photo4 photo5 photo6 photo6";
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+}
+
+.photo-1 {
+  grid-area: photo1;
+}
+.photo-2 {
+  grid-area: photo2;
+}
+.photo-3 {
+  grid-area: photo3;
+}
+.photo-4 {
+  grid-area: photo4;
+}
+.photo-5 {
+  grid-area: photo5;
+}
+.photo-6 {
+  grid-area: photo6;
+}
+.photo-7 {
+  grid-area: photo7;
+}
+.photo-8 {
+  grid-area: photo8;
+}
+
+.recs_bt_child {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  width: 120px;
+  height: 40px;
+
+  background: #6d0db8;
+  border-radius: 10px;
+  margin-top: -20px;
+
+  /* Inside auto layout */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.recs_child_grid {
+  width: 100%;
+  max-width: 1080px;
+  min-width: 400px;
+  margin-left: 200px;
+  margin-right: auto;
+}
+
+.recs_child_div_photo_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px -20px;
+  gap: 30px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  position: absolute;
+  width: 200px;
+  height: 260px;
+  margin-left: -170px;
+  top: 360px;
+  margin-top: -20px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.recs_child_div_photo_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+
+  position: absolute;
+  width: 230px;
+  height: 106px;
+  margin-left: -170px;
+  top: 360px;
+  margin-top: -20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.recs_child_div_photo_3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+
+  position: absolute;
+  width: 205px;
+  height: 74px;
+  margin-left: -170px;
+  top: 360px;
+  margin-top: -20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.recs_child_div_photo_4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+
+  position: absolute;
+  width: 225px;
+  height: 106px;
+  margin-left: 20px;
+  top: 677px;
+  margin-top: -20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.recs_child_div_photo_5 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+
+  position: absolute;
+  width: 219px;
+  height: 74px;
+  margin-left: 20px;
+  top: 680px;
+  margin-top: -20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.recs_child_div_photo_6 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+
+  position: absolute;
+  width: 473px;
+  height: 42px;
+  margin-left: 20px;
+  top: 777px;
+  margin-top: -20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.recs_header {
+  display: flex;
+  background-color: #4d0b81;
+  justify-content: center;
+}
+
+.recs_header-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  /* flex-grow: 2; */
+  column-gap: 74px;
+  justify-content: space-between;
+  margin-right: 70px;
+  margin-left: 100px;
+}
+
+.recs_header-list_item {
+  color: white;
+}
+.recs_header-list_item__link {
+  /* font-family: "Montserrat"; */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  /* display: flex;
+    align-items: center; */
+
+  color: #ffffff;
+}
+
+.recs_buttons {
+  margin: 28px 108px 32px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.recs_header-btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background: rgba(229, 229, 229, 0.6);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.recs_wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.recs_page {
+  padding-top: 40px;
+  background-color: #f7f3ff;
+}
+
+.logoCamera {
+  position: absolute;
+  margin-top: -75px;
+  margin-left: 31px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.logoArtific {
+  position: absolute;
+  margin-left: 97px;
+  margin-top: -60px;
+}
+
+.recs_logo {
+  margin: 20px 0 20px 80px;
+  width: 60px;
+  /* height: 60px; */
+  /* background-color: #d9d9d9; */
+  border-radius: 50%;
+  position: relative;
+}
+.recs_logo-img {
+  width: 80px;
+  height: 60px;
+  border-radius: unset;
+}
+
+/* HacksPromo */
+
+.hacks-promo-desc {
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  /* or 112% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  width: 580px;
+}
+
+.hacks-promo-heading {
+  text-align: left;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  /* or 75% */
+  margin-top: 40px;
+
+  display: flex;
+
+  color: #000000;
+}
+
+.hacks_grid-gallery {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  display: grid;
+  width: 1080px;
+  /* gap: 20px; */
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-rows: 240px;
+  grid-template-areas:
+    "hphoto1 hphoto2 hphoto3 hphoto3"
+    "hphoto1 hphoto2 hphoto5 hphoto6"
+    "hphoto4 hphoto4 hphoto5 hphoto6";
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+}
+
+.hphoto-1 {
+  grid-area: hphoto1;
+}
+.hphoto-2 {
+  grid-area: hphoto2;
+}
+.hphoto-3 {
+  grid-area: hphoto3;
+}
+.hphoto-4 {
+  grid-area: hphoto4;
+}
+.hphoto-5 {
+  grid-area: hphoto5;
+}
+.hphoto-6 {
+  grid-area: hphoto6;
+}
+.hphoto-7 {
+  grid-area: hphoto7;
+}
+.hphoto-8 {
+  grid-area: hphoto8;
+}
+
+.hacks_child_div_photo_1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 215px;
+  height: 48px;
+  left: 170px;
+  top: 316px;
+  font-size: 20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.hacks_child_div_photo_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 215px;
+  height: 76px;
+  left: 460px;
+  top: 316px;
+  font-size: 20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.hacks_child_div_photo_3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 359px;
+  height: 48px;
+  left: 750px;
+  top: 316px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.hacks_child_div_photo_4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 384px;
+  height: 48px;
+  left: 170px;
+  top: 736px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.hacks_child_div_photo_5 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 153px;
+  height: 76px;
+  left: 750px;
+  top: 636px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.hacks_child_div_photo_6 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 215px;
+  height: 48px;
+  left: 1040px;
+  top: 636px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.child_header {
+  font-size: 20px;
+}
