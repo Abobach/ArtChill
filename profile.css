@@ -25,11 +25,12 @@ body {
 }
 
 .logo {
-    margin: 20px 0 20px 0px;
+    margin: 12px 0 26px 0px;
+    display: flex;
 }
 .logo-img {
-    width: 236px;
-    height: 92px;
+    width: 160px;
+    height: 62px;
 }
 
 .header-list {
@@ -558,8 +559,8 @@ body {
     padding-bottom: 48px;
 }
 .footer-logo {
-    width: 236px;
-    margin-left: 50px;
+    width: 160px;
+    margin-left: 90px;
 }
 .footer-info {
     width: 1440px;
