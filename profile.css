@@ -775,8 +775,6 @@ body {
 
 /* User Activity */
 
-
-
 .activity-nav {
     flex-grow: 1;
 }
@@ -807,12 +805,14 @@ body {
     text-decoration: none;
 }
 
-.my-reactions-side {
+.my-reactions-side,
+.bookmark-side {
     width: 75%;
     border-radius: 20px;
     /* margin: 0 auto; */
 }
-.reactions {
+.reactions,
+.bookmarks {
     background: #e5e5e5;
     display: flex;
     flex-wrap: wrap;
@@ -822,9 +822,46 @@ body {
     padding: 32px 0;
     border-radius: 20px;
 }
-.reaction-block{
+.reaction-block {
     border-radius: 20px;
     width: 180px;
     height: 180px;
     background: #aaaaaa;
+}
+
+.bookmark-block {
+    width: 240px;
+    height: 352px;
+    background: linear-gradient(360deg, #ffffff 0%, #353b6c 100%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bm-desc {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    padding: 0 20px;
+}
+.bm-heading {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+}
+.bm-btn {
+    margin: 0 auto;
+    width: 88px;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background: #6d0db8;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
 }
