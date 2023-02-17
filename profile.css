@@ -524,7 +524,7 @@ body {
     margin-top: 18px;
 }
 .card_btn_union {
-    background-image: url(./img/Union.svg);
+    background-image: url(./assets/img/Union.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 26px 24px;
@@ -536,7 +536,7 @@ body {
 }
 
 .card_btn_msg {
-    background-image: url(./img/mail.svg);
+    background-image: url(./assets/img/mail.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 26px 24px;

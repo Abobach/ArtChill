@@ -294,7 +294,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 }
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-    content: url(./img/arrow_list_previous.svg);
+    content: url(./assets/img/arrow_list_previous.svg);
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
@@ -303,7 +303,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 }
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-    content: url(./img/arrow_list_previous-right.svg);
+    content: url(./assets/img/arrow_list_previous-right.svg);
 }
 .swiper-button-lock {
     display: none;
