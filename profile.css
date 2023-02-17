@@ -25,7 +25,7 @@ body {
 }
 
 .logo {
-    margin: 12px 0 26px 0px;
+    margin: 12px 0 26px 70px;
     display: flex;
 }
 .logo-img {
@@ -40,7 +40,7 @@ body {
     column-gap: 74px;
     justify-content: space-between;
     margin-right: 70px;
-    margin-left: 35px;
+    margin-left: 85px;
 }
 
 .header-list_item {
