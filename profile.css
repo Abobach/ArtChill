@@ -457,7 +457,7 @@ body {
     line-height: 22px;
 }
 
-.show-more-gal_btn {
+.show-more_btn {
     background: #6d0db8;
     width: 200px;
     font-family: "Open Sans", sans-serif;
@@ -954,4 +954,35 @@ input::-ms-value {
     border: 1px solid #6d0db8;
     border-radius: 10px;
     margin-top: 28px;
+}
+
+/* User Subscriptions */
+
+.user-subscriptions {
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.subscriptions_heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sub-cards {
+    display: flex;
+    column-gap: 70px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    margin-bottom: 90px;
+}
+
+.subs_btn {
+    width: 160px !important;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px 20px !important;
+    display: block;
+    margin: 0 auto;
+    
 }
