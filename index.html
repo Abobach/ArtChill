@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./swiper-bundle.min.css">
     <script defer src="./js/swiper-bundle.min.js"></script>
     <script defer src="js/slider-config.js"></script>
+    <script defer src="./script.js"></script>
 
 </head>
 </head>
@@ -20,19 +21,18 @@
 <body>
     <header class="header">
         <div class="logo">
-            <!-- <img class="logo-img" src="" alt="logo image"> -->
+            <a href="./index.html"><img class="logo-img" src="./assets/img/urArt-logo.svg" alt="logo image"></a>
         </div>
         <ul class="header-list">
-            <li class="header-list_item"><a class="header-list_item__link" href="#!">Фотографы</a></li>
+            <li class="header-list_item"><a class="header-list_item__link" href="#!">Поиск</a></li>
+            <li class="header-list_item"><a class="header-list_item__link" href="./profile.html">Фотографы</a></li>
             <li class="header-list_item"><a class="header-list_item__link" href="./feed.html">Лента</a></li>
-            <li class="header-list_item"><a class="header-list_item__link" href="./recomendations.html">Рекомендации</a>
-            </li>
-            <li class="header-list_item"><a class="header-list_item__link" href="#!">Фотолайфхаки</a></li>
+            <li class="header-list_item"><a class="header-list_item__link" href="./recomendations.html">Рекомендации</a></li>
+            <li class="header-list_item"><a class="header-list_item__link" href="./HacksPromo.html">Фотолайфхаки</a></li>
         </ul>
         <div class="buttons">
-
-            <a class="header-btn" type="button" href="./authPage.html">Вход</a>
-            <a type="button" class="header-btn" href="">Регистрация</a>
+            <button type="button" class="header-btn">Вход</button>
+            <button type="button" class="header-btn">Регистрация</button>
         </div>
     </header>
 
@@ -46,7 +46,7 @@
                         виртуальное арт-пространство, в котором фотографии всегда будут на первом месте.</p>
                 </div>
                 <div class="div2">
-                    <!-- <img  src="./assest/main1.jpg" alt="Сервер не прогружен">  -->
+                 <!-- <img class="logo-img" src="./assets/main1.jpg" alt="logo image"> -->
                 </div>
             </div>
         </section>
@@ -280,7 +280,7 @@
                             фотографии по вашим любимым тематикам. Пара кликов - и ваше личное арт-пространство готово!
                             Взгляните на самые популярные проекты по версии пользователей UrArt:</p>
                     </div>
-                    <div class="block_image">
+                    <div class="anim block_image">
                         <div class="line_image">
                             <div class="image1"></div>
                             <div class="image2"></div>
@@ -305,72 +305,200 @@
                             новых поклонников.</p>
                     </div>
                     <div class="block_scroll">
+                        <div class="block_scroll">
 
-                        <div class="block_photo1">
-                            <div class="margin_block_ava">
-                                <div class="block_ava"></div>
-                            </div>
-                            <div class="div_text_bloc">
-                                <h3 class="name_photo">Артем кумакшев</h3>
-                                <ul class="list_photo">
-                                    <li class="name_photo_item">Более 100 проектов</li>
-                                    <li class="name_photo_item">Рейтинг 4.8</li>
-                                    <li class="name_photo_item">Более 500 отзывов</li>
-                                </ul>
-                                <div class="bt_icon_group">
-                                    <input type="button" class="bt_user">
-                                    <!-- <img src="./assest/user.png" alt="" style="width: 20px; height: 20px;"> -->
-                                    </input>
-                                    <input type="button" class="bt_email">
-                                    <!-- <img src="./assest/email.ico" alt="" style="width: 20px; height: 20px;"> -->
-                                    </input>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper mySwiper">
+                                <div class="cards swiper-wrapper ">
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava1.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava2.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+        
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava3.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava1.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava2.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+        
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava3.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava1.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava2.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+        
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava3.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava1.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava2.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+        
+                                    <div class="card swiper-slide">
+                                        <img class="rec-photo" src="./assets/img/card-ava3.svg" alt="">
+                                        <div class="card-name">
+                                            <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                            <ul class="desc-list">
+                                                <li class="desc-list_item">Более 100 проектов</li>
+                                                <li class="desc-list_item">Рейтинг: 4.8</li>
+                                                <li class="desc-list_item">Более 500 отзывов</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cards_btns">
+                                            <button type="button" class="card_btn_union"></button>
+                                            <button type="button" class="card_btn_msg"></button>
+                                        </div>
+                                    </div>
+        
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="block_photo2">
-                            <div class="margin_block_ava">
-                                <div class="block_ava2"></div>
-                            </div>
-                            <div class="div_text_block2">
-                                <h3 class="name_photo">Андрей Федеоров</h3>
-                                <ul class="list_photo">
-                                    <li class="name_photo_item">Более 100 проектов</li>
-                                    <li class="name_photo_item">Рейтинг 4.8</li>
-                                    <li class="name_photo_item">Более 500 отзывов</li>
-                                </ul>
-                                <div class="bt_icon_group">
-                                    <input type="button" class="bt_user">
-                                    <!-- <img src="./assest/user.png" alt=""style="width: 20px; height: 20px;"> -->
-                                    </input>
-                                    <input type="button" class="bt_email">
-                                    <!-- <img src="./assest/email.ico" alt=""style="width: 20px; height: 20px;"> -->
-                                    </input>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block_photo3">
-                            <div class="margin_block_ava">
-                                <div class="block_ava3"></div>
-                            </div>
-                            <div class="div_text_block3">
-                                <h3 class="name_photo">Роман Пименов</h3>
-                                <ul class="list_photo">
-                                    <li class="name_photo_item">Более 100 проектов</li>
-                                    <li class="name_photo_item">Рейтинг 4.8</li>
-                                    <li class="name_photo_item">Более 500 отзывов</li>
-                                </ul>
-                                <div class="bt_icon_group">
-                                    <input type="button" class="bt_user">
-                                    <!-- <img src="./assest/user.png" alt="" style="width: 20px; height: 20px;"> -->
-                                    </input>
-                                    <input type="button" class="bt_email">
-                                    <!-- <img src="./assest/email.ico" alt=""style="width: 20px; height: 20px;"> -->
-                                    </input>
-                                </div>
-                            </div>
+        
                         </div>
 
                     </div>
@@ -383,7 +511,7 @@
                     <p class="p_scroll">В этом тебе поможет раздел “Фотолайфхаки”</p>
                 </div>
                 <div class="main_div_this_block">
-                    <div class="child_main_div">
+                    <div class="anim child_main_div">
                         <div class="cart_one">
                             <div class="child_cart_one">
                                 <p>Как правильно снимать звёздное небо</p>
@@ -438,7 +566,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div><img class="footer-logo" src="./img/fanta.png" alt=""></div>
+        <div><img class="footer-logo" src="./assets/img/urArt-logo.svg" alt=""></div>
         <div class="footer-info">
             <div class="footer-topics">
                 <h3 class="footer_heading">О нас</h3>
@@ -447,7 +575,7 @@
                 <p class="footer_text"><a class="footer_text_link" href="">Политика конфиденциальности</a></p>
             </div>
             <div class="footer-topics">
-                <h3 class="footer_heading">Посетителм</h3>
+                <h3 class="footer_heading">Посетителям</h3>
                 <p class="footer_text"><a class="footer_text_link" href="">Фотографы</a></p>
                 <p class="footer_text"><a class="footer_text_link" href="">Лента</a></p>
                 <p class="footer_text"><a class="footer_text_link" href="">Рекомендации</a></p>
@@ -465,8 +593,8 @@
                 <p class="footer_text"><a class="footer_text_link" href="">urart@yandex.ru</a></p>
                 <p class="footer_text"><a class="footer_text_link" href="">Мы в соцсетях:</a></p>
                 <div class="footer_social">
-                    <div><img src="./img/vk.svg" alt="vkontakte logo"></div>
-                    <div><img src="./img/telegram.svg" alt="telegram logo"></div>
+                    <div><img src="./assets/img/vk.svg" alt="vkontakte logo"></div>
+                    <div><img src="./assets/img/telegram.svg" alt="telegram logo"></div>
                 </div>
             </div>
 
