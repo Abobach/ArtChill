@@ -10,6 +10,14 @@
   width: 100%;
   max-width: 1920px;
 }
+.logo {
+  margin: 12px 0 26px 70px;
+  display: flex;
+}
+.logo-img {
+  width: 160px;
+  height: 62px;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -26,49 +34,37 @@ body {
   max-width: 1920px;
   height: 400px;
 }
-.wrap {
-  width: 1240px;
-  margin: 0 auto;
-}
-
-.logo {
-  margin: 12px 0 26px 70px;
-  display: flex;
-}
 
 .header-list {
   list-style-type: none;
   display: flex;
   align-items: center;
-  flex-grow: 2;
+  column-gap: 74px;
   justify-content: space-between;
   margin-right: 70px;
-  margin-left: 260px;
+  margin-left: 85px;
 }
 
-.header-list_item {
-  color: white;
-}
 .header-list_item__link {
-  /* font-family: "Montserrat"; */
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  /* display: flex;
-    align-items: center; */
   color: #ffffff;
 }
-
+.wrap {
+  width: 1240px;
+  margin: 0 auto;
+}
 .buttons {
   margin: 28px 108px 32px 0;
   display: flex;
   align-items: center;
   column-gap: 30px;
 }
-
 .header-btn {
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -78,6 +74,53 @@ body {
   border: none;
   padding: 10px;
 }
+/* .logo {
+  margin: 12px 0 26px 70px;
+  display: flex;
+} */
+
+/* .header-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+  justify-content: space-between;
+  margin-right: 70px;
+  margin-left: 260px;
+} */
+
+.header-list_item {
+  color: white;
+}
+/* .header-list_item__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+} */
+
+.buttons {
+  margin: 28px 108px 32px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+/* .header-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background: rgba(229, 229, 229, 0.6);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+} */
 
 .bt_group {
   width: 400px;
