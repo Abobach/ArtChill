@@ -172,6 +172,7 @@ body {
 
 .about-me,
 .services {
+    position: relative;
     padding-top: 20px;
     padding-left: 20px;
     background: #dcd1f2;
@@ -274,6 +275,7 @@ body {
     border-radius: 20px;
     margin-top: 20px;
     height: 290px;
+    position: relative;
 }
 
 .comment {
@@ -984,5 +986,47 @@ input::-ms-value {
     padding: 10px 20px !important;
     display: block;
     margin: 0 auto;
-    
+}
+
+/* Personal profile */
+
+.personal-social {
+    column-gap: 58px;
+    padding-right: 60px !important;
+}
+
+.social-links-block {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.social-links {
+    display: flex;
+    column-gap: 12px;
+}
+
+.social-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #6d0db8;
+}
+
+.edit-block {
+    position: absolute;
+    right: 30px;
+    top: 22px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.edit-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #6d0db8;
+    align-items: center;
 }

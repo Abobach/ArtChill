@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-  
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
- 
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <script defer src="./js/swiper-bundle.min.js"></script>
+    <script defer src="js/slider-config.js"></script>
+
 </head>
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -20,11 +25,12 @@
         <ul class="header-list">
             <li class="header-list_item"><a class="header-list_item__link" href="#!">Фотографы</a></li>
             <li class="header-list_item"><a class="header-list_item__link" href="./feed.html">Лента</a></li>
-            <li class="header-list_item"><a class="header-list_item__link" href="./recomendations.html">Рекомендации</a></li>
+            <li class="header-list_item"><a class="header-list_item__link" href="./recomendations.html">Рекомендации</a>
+            </li>
             <li class="header-list_item"><a class="header-list_item__link" href="#!">Фотолайфхаки</a></li>
         </ul>
         <div class="buttons">
-            
+
             <a class="header-btn" type="button" href="./authPage.html">Вход</a>
             <a type="button" class="header-btn" href="">Регистрация</a>
         </div>
@@ -35,7 +41,9 @@
             <div class="main_div">
                 <div class="div1">
                     <h2 class="h2_main_div">Встречайте уникальную онлайн-платформу для фотографов!</h2>
-                    <p class="p_main_div">UrArt объединяет поклонников фотоискусства со всей России. Кем бы вы ни были - профессиональным фотографом или рядовым пользователем, на UrArt вы сможете построить своё виртуальное арт-пространство, в котором фотографии всегда будут на первом месте.</p>
+                    <p class="p_main_div">UrArt объединяет поклонников фотоискусства со всей России. Кем бы вы ни были -
+                        профессиональным фотографом или рядовым пользователем, на UrArt вы сможете построить своё
+                        виртуальное арт-пространство, в котором фотографии всегда будут на первом месте.</p>
                 </div>
                 <div class="div2">
                     <!-- <img  src="./assest/main1.jpg" alt="Сервер не прогружен">  -->
@@ -45,15 +53,17 @@
         <section class="block_group">
             <div class="block_hello">
                 <div class="img_hello">
-                    
+
                 </div>
-                
+
                 <div class="text_hello">
-                    <h2 class="h2_hello">Готов предложить 
+                    <h2 class="h2_hello">Готов предложить
                         свои фотоуслуги? </h2>
-                        <p class="p_hello">Ты - фотограф, который находится в поиске новых клиентов и признания в сети? 
-                            На UrArt ты можешь создать подробный профиль с портфолио своих работ, а также следить за обновлениями других фотографов. Покоряй пользователей своим творческим видением и привлекай новых клиентов!</p>
-                            <button class="bt_hello" type="button">Зарегестрироваться</button>
+                    <p class="p_hello">Ты - фотограф, который находится в поиске новых клиентов и признания в сети?
+                        На UrArt ты можешь создать подробный профиль с портфолио своих работ, а также следить за
+                        обновлениями других фотографов. Покоряй пользователей своим творческим видением и привлекай
+                        новых клиентов!</p>
+                    <button class="bt_hello" type="button">Зарегестрироваться</button>
                 </div>
             </div>
         </section>
@@ -61,61 +71,291 @@
             <div class="main_search">
                 <div class="text_photo">
                     <h2 class="h2_photo">Ищешь фотографа?</h2>
-                    <p class="p_photo">UrArt - это онлайн-платформа, на которой можно найти нужного специалиста и заказать его услуги. На сайте представлена обширная база фотографов со всей России. 
-                        Предлагаем ознакомиться с самыми проверенными специалистами по версии пользователей UrArt:</p>   
+                    <p class="p_photo">UrArt - это онлайн-платформа, на которой можно найти нужного специалиста и
+                        заказать его услуги. На сайте представлена обширная база фотографов со всей России.
+                        Предлагаем ознакомиться с самыми проверенными специалистами по версии пользователей UrArt:</p>
                 </div>
                 <div class="block_scroll">
-                       
-                    <div class="block_photo1"> 
-                        <div class="margin_block_ava">
-                            <div class="block_ava"></div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper mySwiper">
+                        <div class="cards swiper-wrapper ">
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava1.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava2.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava3.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava1.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava2.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava3.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava1.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava2.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava3.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava1.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava2.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+                                <img class="rec-photo" src="./assets/img/card-ava3.svg" alt="">
+                                <div class="card-name">
+                                    <h3 class="card-name_heading">Евгений, Краснодар</h3>
+                                    <ul class="desc-list">
+                                        <li class="desc-list_item">Более 100 проектов</li>
+                                        <li class="desc-list_item">Рейтинг: 4.8</li>
+                                        <li class="desc-list_item">Более 500 отзывов</li>
+                                    </ul>
+                                </div>
+                                <div class="cards_btns">
+                                    <button type="button" class="card_btn_union"></button>
+                                    <button type="button" class="card_btn_msg"></button>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="div_text_bloc">
-                            <h3 class="name_photo">Артем кумакшев</h3>
-                            <ul class="list_photo">
-                                <li class="name_photo_item">Более 100 проектов</li>
-                                <li class="name_photo_item">Рейтинг 4.8</li>
-                                <li class="name_photo_item">Более 500 отзывов</li>
-                            </ul> 
-                            <div class="bt_icon_group">
-                            <input type="button" class="bt_user">
-                            <!-- <img src="./assest/user.png" alt="" style="width: 20px; height: 20px;"> -->
-                                </input>
-                                <input type="button" class="bt_email">
-                                <!-- <img src="./assest/email.ico" alt="" style="width: 20px; height: 20px;"> -->
-                                </input>
-                         </div>
                     </div>
-                       
+
+                </div>
+            </div>
+            </div>
+            <section class="block_main3">
+                <div class="block_main3_div">
+                    <div class="block_main3_text">
+                        <h3 class="text_block_image">Любишь красивые фотографии?</h3>
+                        <p class="anim p_block_image">В UrArt вас ждет персонализированная лента, где будут собраны
+                            фотографии по вашим любимым тематикам. Пара кликов - и ваше личное арт-пространство готово!
+                            Взгляните на самые популярные проекты по версии пользователей UrArt:</p>
                     </div>
-                    <div class="block_photo2">
+                    <div class="block_image">
+                        <div class="line_image">
+                            <div class="image1"></div>
+                            <div class="image2"></div>
+                        </div>
+                        <div class="line_image2">
+                            <div class="image3"></div>
+                            <div class="image4"></div>
+                            <div class="image5"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="bt_main_block">Показать больше</button>
+            </section>
+            <section>
+                <div class="main_search">
+                    <div class="text_photo">
+                        <h2 class="h2_photo1">Хочешь заявить о себе?</h2>
+                        <p class="p_photo1">Ты - начинающий фотограф, о котором пока не знает мир? UrArt помогает с
+                            продвижением новых специалистов в сфере фотоискусства. Всё, что требуется от новичка - это
+                            заполненный профиль, раскрывающий творческую натуру. Благодаря охватам на платформе и
+                            показам в разделе "Рекомендации" ты можешь найти своих первых клиентов, а также обрести
+                            новых поклонников.</p>
+                    </div>
+                    <div class="block_scroll">
+
+                        <div class="block_photo1">
+                            <div class="margin_block_ava">
+                                <div class="block_ava"></div>
+                            </div>
+                            <div class="div_text_bloc">
+                                <h3 class="name_photo">Артем кумакшев</h3>
+                                <ul class="list_photo">
+                                    <li class="name_photo_item">Более 100 проектов</li>
+                                    <li class="name_photo_item">Рейтинг 4.8</li>
+                                    <li class="name_photo_item">Более 500 отзывов</li>
+                                </ul>
+                                <div class="bt_icon_group">
+                                    <input type="button" class="bt_user">
+                                    <!-- <img src="./assest/user.png" alt="" style="width: 20px; height: 20px;"> -->
+                                    </input>
+                                    <input type="button" class="bt_email">
+                                    <!-- <img src="./assest/email.ico" alt="" style="width: 20px; height: 20px;"> -->
+                                    </input>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="block_photo2">
                             <div class="margin_block_ava">
                                 <div class="block_ava2"></div>
                             </div>
-                        <div class="div_text_block2">
-                            <h3 class="name_photo">Андрей Федеоров</h3>
-                            <ul class="list_photo">
-                                <li class="name_photo_item">Более 100 проектов</li>
-                                <li class="name_photo_item">Рейтинг 4.8</li>
-                                <li class="name_photo_item">Более 500 отзывов</li>
-                            </ul>
-                            <div class="bt_icon_group">
-                                <input type="button" class="bt_user">
-                                <!-- <img src="./assest/user.png" alt=""style="width: 20px; height: 20px;"> -->
-                                </input>
-                                <input type="button" class="bt_email">
-                                <!-- <img src="./assest/email.ico" alt=""style="width: 20px; height: 20px;"> -->
-                                </input>
+                            <div class="div_text_block2">
+                                <h3 class="name_photo">Андрей Федеоров</h3>
+                                <ul class="list_photo">
+                                    <li class="name_photo_item">Более 100 проектов</li>
+                                    <li class="name_photo_item">Рейтинг 4.8</li>
+                                    <li class="name_photo_item">Более 500 отзывов</li>
+                                </ul>
+                                <div class="bt_icon_group">
+                                    <input type="button" class="bt_user">
+                                    <!-- <img src="./assest/user.png" alt=""style="width: 20px; height: 20px;"> -->
+                                    </input>
+                                    <input type="button" class="bt_email">
+                                    <!-- <img src="./assest/email.ico" alt=""style="width: 20px; height: 20px;"> -->
+                                    </input>
 
 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="block_photo3">
+                        <div class="block_photo3">
                             <div class="margin_block_ava">
                                 <div class="block_ava3"></div>
                             </div>
-                        <div class="div_text_block3">
+                            <div class="div_text_block3">
                                 <h3 class="name_photo">Роман Пименов</h3>
                                 <ul class="list_photo">
                                     <li class="name_photo_item">Более 100 проектов</li>
@@ -130,112 +370,14 @@
                                     <!-- <img src="./assest/email.ico" alt=""style="width: 20px; height: 20px;"> -->
                                     </input>
                                 </div>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
-            </div>
-                <section class="block_main3">
-                    <div class="block_main3_div">
-                        <div class="block_main3_text">
-                            <h3 class="text_block_image">Любишь красивые фотографии?</h3>
-                            <p class="anim p_block_image">В UrArt вас ждет персонализированная лента, где будут собраны фотографии по вашим любимым тематикам. Пара кликов - и ваше личное арт-пространство готово! 
-                                Взгляните на самые популярные проекты по версии пользователей UrArt:</p>
-                        </div>
-                        <div class="block_image">
-                            <div class="line_image">
-                                <div class="image1"></div>
-                                <div class="image2"></div>
-                            </div>
-                            <div class="line_image2">
-                                <div class="image3"></div>
-                                <div class="image4"></div>
-                                <div class="image5"></div>
-                            </div> 
-                        </div>
                     </div>
-                    <button class="bt_main_block">Показать больше</button>
-                </section>
-                <section>
-                    <div class="main_search">
-                        <div class="text_photo">
-                            <h2 class="h2_photo1">Хочешь заявить о себе?</h2>
-                            <p class="p_photo1">Ты - начинающий фотограф, о котором пока не знает мир? UrArt помогает с продвижением новых специалистов в сфере фотоискусства. Всё, что требуется от новичка - это заполненный профиль, раскрывающий творческую натуру. Благодаря охватам на платформе и показам в разделе "Рекомендации" ты можешь найти своих первых клиентов, а также обрести новых поклонников.</p>   
-                        </div>
-                        <div class="block_scroll">
-                               
-                            <div class="block_photo1"> 
-                                <div class="margin_block_ava">
-                                    <div class="block_ava"></div>
-                                </div>
-                                <div class="div_text_bloc">
-                                    <h3 class="name_photo">Артем кумакшев</h3>
-                                    <ul class="list_photo">
-                                        <li class="name_photo_item">Более 100 проектов</li>
-                                        <li class="name_photo_item">Рейтинг 4.8</li>
-                                        <li class="name_photo_item">Более 500 отзывов</li>
-                                    </ul> 
-                                    <div class="bt_icon_group">
-                                    <input type="button" class="bt_user">
-                                    <!-- <img src="./assest/user.png" alt="" style="width: 20px; height: 20px;"> -->
-                                        </input>
-                                        <input type="button" class="bt_email">
-                                        <!-- <img src="./assest/email.ico" alt="" style="width: 20px; height: 20px;"> -->
-                                        </input>
-                                 </div>
-                            </div>
-                               
-                            </div>
-                            <div class="block_photo2">
-                                    <div class="margin_block_ava">
-                                        <div class="block_ava2"></div>
-                                    </div>
-                                <div class="div_text_block2">
-                                    <h3 class="name_photo">Андрей Федеоров</h3>
-                                    <ul class="list_photo">
-                                        <li class="name_photo_item">Более 100 проектов</li>
-                                        <li class="name_photo_item">Рейтинг 4.8</li>
-                                        <li class="name_photo_item">Более 500 отзывов</li>
-                                    </ul>
-                                    <div class="bt_icon_group">
-                                        <input type="button" class="bt_user">
-                                        <!-- <img src="./assest/user.png" alt=""style="width: 20px; height: 20px;"> -->
-                                        </input>
-                                        <input type="button" class="bt_email">
-                                        <!-- <img src="./assest/email.ico" alt=""style="width: 20px; height: 20px;"> -->
-                                        </input>
-        
-        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block_photo3">
-                                    <div class="margin_block_ava">
-                                        <div class="block_ava3"></div>
-                                    </div>
-                                <div class="div_text_block3">
-                                        <h3 class="name_photo">Роман Пименов</h3>
-                                        <ul class="list_photo">
-                                            <li class="name_photo_item">Более 100 проектов</li>
-                                            <li class="name_photo_item">Рейтинг 4.8</li>
-                                            <li class="name_photo_item">Более 500 отзывов</li>
-                                        </ul>
-                                        <div class="bt_icon_group">
-                                            <input type="button" class="bt_user">
-                                            <!-- <img src="./assest/user.png" alt="" style="width: 20px; height: 20px;"> -->
-                                            </input>
-                                            <input type="button" class="bt_email">
-                                            <!-- <img src="./assest/email.ico" alt=""style="width: 20px; height: 20px;"> -->
-                                            </input>
-                                        </div>
-                                </div>
-                            </div>
-        
-                        </div>
-                </section>
+            </section>
         </section>
         <section class="block_scrolla">
-            <div    >
+            <div>
                 <div>
                     <h3 class="text_scroll">Ищешь секрет идеального фото?</h3>
                     <p class="p_scroll">В этом тебе поможет раздел “Фотолайфхаки”</p>
@@ -252,7 +394,7 @@
                         </div>
                         <div class="cart_two">
                             <div class="child_cart_one">
-                                <p>Что нужно знать 
+                                <p>Что нужно знать
                                     начинающему фотографу?</p>
                                 <button>Читать</button>
 
@@ -281,21 +423,21 @@
                     </button> -->
                 </div>
             </div>
-        
+
         </section>
         <section class="block_group2">
             <div class="block_good">
-                 <div class="text_hello">
+                <div class="text_hello">
                     <h2 class="h2_hello">Понравилось у нас? </h2>
-                        <p class="p_hello">Скорее присоединяйся к сообществу любителей фотографии со всей России!</p>
-                            <button class="bt_hello" type="button">Зарегестрироваться</button>
-                            </div>
-                             <div class="img_hellos">
-                             </div>
+                    <p class="p_hello">Скорее присоединяйся к сообществу любителей фотографии со всей России!</p>
+                    <button class="bt_hello" type="button">Зарегестрироваться</button>
+                </div>
+                <div class="img_hellos">
+                </div>
             </div>
         </section>
     </main>
-     <footer class="footer">
+    <footer class="footer">
         <div><img class="footer-logo" src="./img/fanta.png" alt=""></div>
         <div class="footer-info">
             <div class="footer-topics">
@@ -331,4 +473,5 @@
         </div>
     </footer>
 </body>
+
 </html>
