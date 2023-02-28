@@ -68,10 +68,6 @@
                         <img src="./assets/img/stats-icon.svg" alt="">
                         <a class="social-link" href="">Статистика</a>
                     </div>
-                    <div class="social-links">
-                        <img src="./assets/img/message-circle.svg" alt="">
-                        <a class="social-link" href="">Мои отзывы</a>
-                    </div>
                 </div>
             </div>
             <div class="user-profile-pagination">
@@ -91,7 +87,7 @@
 
         <section class="main-info wrap">
             <div class="left-side">
-                <div class="about-me">
+                <div class="about-me personal-about-me">
                     <div class="edit-block">
                         <img src="./assets/img/edit.svg" alt="">
                         <a class="edit-link" href="#!">Редактировать</a>
@@ -122,7 +118,7 @@
                     </div>
 
                 </div>
-                <div class="services">
+                <div class="services personal-services">
                     <div class="edit-block">
                         <img src="./assets/img/edit.svg" alt="">
                         <a class="edit-link" href="#!">Редактировать</a>
@@ -163,12 +159,31 @@
                 </div>
             </div>
             <div class="right-side">
+                <div class="contacts">
+                    <div class="edit-block">
+                        <img src="./assets/img/edit.svg" alt="">
+                        <a class="edit-link" href="#!">Редактировать</a>
+                    </div>
+                    <h2 class="topics">Контакты</h2>
+                    <ul class="contacts-list">
+                        <li class="contacts-list_item"><strong class="contact">Телефон</strong><span>8 (999)
+                                999-99-99</span></li>
+                        <li class="contacts-list_item"><strong
+                                class="contact">e-mail</strong><span>ivanivanov@mail.ru</span></li>
+                        <li class="contacts-list_item"><strong
+                                class="contact">Вконтакте:</strong><span>vk.com/ivanivanov</span></li>
+                        <li class="contacts-list_item"><strong
+                                class="contact">Телеграм:</strong><span>t.me/ivanivanov</span></li>
+                        <li class="contacts-list_item"><strong class="contact">WhatsApp:</strong><span>8 (999)
+                                999-99-99</span></li>
+                    </ul>
+                </div>
                 <div class="rating">
                     <h2><strong>Рейтинг фотографа: 4.9</strong> </h2>
                     <div class="slider slick-vertical">
                         <div class="comment comment-big">
                             <div class="comment-name">
-                                <img src="./assets/img/Avatar2.svg" alt="">
+                                <img src="./assets/img/review-ava1.png" alt="">
                                 <div class="comment-name_wrapper">
                                     <h3 class="comment-name_heading">Марина Петрова</h3>
                                     <div class="date-comment">
@@ -198,7 +213,7 @@
                         </div>
                         <div class="comment">
                             <div class="comment-name">
-                                <img src="./assets/img/Avatar2.svg" alt="">
+                                <img src="./assets/img/review-ava2.png" alt="">
                                 <div class="comment-name_wrapper">
                                     <h3 class="comment-name_heading">Марина Петрова</h3>
                                     <div class="date-comment">
@@ -362,30 +377,7 @@
                                 <p>Большое спасибо Ивану за проделанную работу!</p>
                             </div>
                         </div>
-
-
                     </div>
-
-
-                </div>
-                <div class="contacts">
-                    <div class="edit-block">
-                        <img src="./assets/img/edit.svg" alt="">
-                        <a class="edit-link" href="#!">Редактировать</a>
-                    </div>
-                    <h2 class="topics">Контакты</h2>
-                    <ul class="contacts-list">
-                        <li class="contacts-list_item"><strong class="contact">Телефон</strong><span>8 (999)
-                                999-99-99</span></li>
-                        <li class="contacts-list_item"><strong
-                                class="contact">e-mail</strong><span>ivanivanov@mail.ru</span></li>
-                        <li class="contacts-list_item"><strong
-                                class="contact">Вконтакте:</strong><span>vk.com/ivanivanov</span></li>
-                        <li class="contacts-list_item"><strong
-                                class="contact">Телеграм:</strong><span>t.me/ivanivanov</span></li>
-                        <li class="contacts-list_item"><strong class="contact">WhatsApp:</strong><span>8 (999)
-                                999-99-99</span></li>
-                    </ul>
                 </div>
             </div>
         </section>
@@ -401,7 +393,11 @@
                 <div class="photo photo-7"><img class="galImg" src="./assets/img/photo7.svg" alt=""></div>
                 <div class="photo photo-8"><img class="galImg" src="./assets/img/photo8.svg" alt=""></div>
             </div>
-            <button type="button" class="show-more_btn">Показать больше</button>
+            <div class="gallery-btns">
+                <button type="button" class="upload-photo">Загрузить фото</button>
+                <button type="button" class="show-more_btn">Показать больше</button>
+
+            </div>
         </section>
 
     </main>
