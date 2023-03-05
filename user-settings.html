@@ -2,6 +2,7 @@
 <html lang="zxx">
 
 <head>
+    <script defer src="addTopics.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
@@ -141,7 +142,7 @@
                     <div class="modal-body">
                         <h2 class="modal-heading">Мои тематики</h2>
                         <ul class="topics-list">
-                            <li class="topics-list_item">
+                            <!-- <li class="topics-list_item">
                                 <span class="topics-list_text">Портрет</span>
                                 <img src="./assets/img/close-icon.svg" alt="">
                             </li>
@@ -168,8 +169,8 @@
                             <li class="topics-list_item">
                                 <span class="topics-list_text">Пейзаж</span>
                                 <img src="./assets/img/close-icon.svg" alt="">
-                            </li>
-                            <button class="add-topic">
+                            </li> -->
+                            <button class="add-topic" id="addTopic">
                                 <img class="plus-icon" src="./assets/img/plus-icon.svg" alt="">
                                 <span class="add-topic_text">Добавить тематику</span>
                             </button>
@@ -197,7 +198,7 @@
                                 </div>
                             </div>
                             <div class="topics-save-btns">
-                                <button class="topics-save-btn">Сохранить изменения</button>
+                                <button class="topics-save-btn" onclick="addTopics()">Сохранить изменения</button>
                                 <button class="topics-reset-btn">Отмена</button>
 
                             </div>
