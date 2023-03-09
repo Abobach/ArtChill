@@ -336,6 +336,8 @@ body {
     display: flex;
     align-items: center;
     column-gap: 4px;
+    flex-grow: 1;
+    justify-content: end;
 }
 
 .grade-num {
