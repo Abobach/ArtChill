@@ -944,6 +944,23 @@ div.img_hellos {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
+.btn_read {
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  color: #ffffff;
+  margin-top: 20;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 88px;
+  height: 40px;
+
+  /* UrArt */
+
+  background: #6d0db8;
+  border-radius: 10px;
+}
 div.text_hello {
   width: 475px;
   height: 460px;
@@ -956,6 +973,7 @@ footer {
   column-gap: 56px;
   padding-top: 60px;
   justify-content: center;
+
   padding-bottom: 48px;
 }
 .btn_arrow {
