@@ -1,201 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="authPage.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./AuthScript.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <a href="./index.html"
-          ><img
-            class="logo-img"
-            src="./assets/img/urArt-logo.svg"
-            alt="logo image"
-        /></a>
-      </div>
-      <ul class="header-list">
-        <li class="header-list_item">
-          <a class="header-list_item__link" href="#!">Поиск</a>
-        </li>
-        <li class="header-list_item">
-          <a class="header-list_item__link" href="./profile.html">Фотографы</a>
-        </li>
-        <li class="header-list_item">
-          <a class="header-list_item__link" href="./feed.html">Лента</a>
-        </li>
-        <li class="header-list_item">
-          <a class="header-list_item__link" href="./recomendations.html">Рекомендации</a>
-        </li>
-        <li class="header-list_item">
-          <a class="header-list_item__link" href="./HacksPromo.html">Фотолайфхаки</a>
-        </li>
-      </ul>
-      <div class="buttons">
-        <button type="button" class="header-btn">Вход</button>
-        <button type="button" class="header-btn">Регистрация</button>
-      </div>
-    </header>
-    <main>
-      <section class="auth_div">
-        <div class="main_ayth_div">
-          <div class="section_oneReg">
-            <!-- картинка -->
-          </div>
-          <form id="signup-form">
-            <div class="section_two">
-              <h2 class="h2_auth">Впервые у нас?</h2>
-              <p class="p_auth">
-                Откройте для себя мир фотоискусства - зарегистрируйтесь на UrArt
-              </p>
-              <div class="div_pole">
-                <p class="email_p">Адрес электронной почты</p>
-                <input
-                  type="text"
-                  class="email_text"
-                  id="email"
-                  placeholder="Введите адрес эл.почты"
-                  name="email"
-                />
-                <p class="pas_p">Пароль</p>
-                <div class="wrapper">
-                  <input
-                    type="password"
-                    placeholder="Введите пароль"
-                    id="password"
-                  />
-                  <span class="show-btn"><i class="fas fa-eye"></i></span>
-                </div>
-                <div class="wrapper">
-                  <input
-                    type="password"
-                    placeholder="Подтверждение пароля"
-                    id="confirmPassword"
-                  />
-                  <span class="show-btn"><i class="fas fa-eye"></i></span>
-                </div>
-                <script>
-                  const passField = document.querySelector("input");
-                  const showBtn = document.querySelector("span i");
-                  showBtn.onclick = () => {
-                    if (passField.type === "password") {
-                      passField.type = "text";
-                      showBtn.classList.add("hide-btn");
-                    } else {
-                      passField.type = "password";
-                      showBtn.classList.remove("hide-btn");
-                    }
-                  };
-                </script>
 
-                <div class="div_bt_auth">
-                  <!-- <button class="btn btn-success">Зарегистрироваться</button> -->
-                  <button type="submit" id="login" class="a_html">
-                    Зарегестрироваться
-                  </button>
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="authPage.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./AuthScript.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+</head>
 
-                <div class="roud_btn">
-                  <div class="vk"></div>
-                  <div class="od"></div>
-                  <div class="gogle"></div>
-                  <div class="dzen"></div>
-                </div>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="./index.html"><img class="logo-img" src="./assets/img/urArt-logo.svg" alt="logo image" /></a>
+    </div>
+    <ul class="header-list">
+      <li class="header-list_item">
+        <a class="header-list_item__link" href="#!">Поиск</a>
+      </li>
+      <li class="header-list_item">
+        <a class="header-list_item__link" href="./profile.html">Фотографы</a>
+      </li>
+      <li class="header-list_item">
+        <a class="header-list_item__link" href="./feed.html">Лента</a>
+      </li>
+      <li class="header-list_item">
+        <a class="header-list_item__link" href="./recomendations.html">Рекомендации</a>
+      </li>
+      <li class="header-list_item">
+        <a class="header-list_item__link" href="./HacksPromo.html">Фотолайфхаки</a>
+      </li>
+    </ul>
+    <div class="buttons">
+      <a type="button" class="header-btn" href="./authPage.html">Вход</a>
+      <a type="button" class="header-btn" href="./RegPage.html">Регистрация</a>
+    </div>
+  </header>
+  <main>
+    <section class="auth_div">
+      <div class="main_ayth_div">
+        <div class="section_oneReg">
+          <!-- картинка -->
+        </div>
+        <form id="signup-form">
+          <div class="section_two">
+            <h2 class="h2_auth">Впервые у нас?</h2>
+            <p class="p_auth">
+              Откройте для себя мир фотоискусства - зарегистрируйтесь на UrArt
+            </p>
+            <div class="div_pole">
+              <p class="email_p">Адрес электронной почты</p>
+              <input type="text" class="email_text" id="email" placeholder="Введите адрес эл.почты" name="email" />
+              <p class="pas_p">Пароль</p>
+              <div class="wrapper">
+                <input type="password" placeholder="Введите пароль" id="password" />
+                <span class="show-btn"><i class="fas fa-eye"></i></span>
+              </div>
+              <div class="wrapper">
+                <input type="password" placeholder="Подтверждение пароля" id="confirmPassword" />
+                <span class="show-btn"><i class="fas fa-eye"></i></span>
+              </div>
+              <script>
+                const passField = document.querySelector("input");
+                const showBtn = document.querySelector("span i");
+                showBtn.onclick = () => {
+                  if (passField.type === "password") {
+                    passField.type = "text";
+                    showBtn.classList.add("hide-btn");
+                  } else {
+                    passField.type = "password";
+                    showBtn.classList.remove("hide-btn");
+                  }
+                };
+              </script>
+
+              <div class="div_bt_auth">
+                <!-- <button class="btn btn-success">Зарегистрироваться</button> -->
+                <button type="submit" id="login" class="a_html">
+                  Зарегестрироваться
+                </button>
+              </div>
+
+              <div class="roud_btn">
+                <div class="vk"></div>
+                <div class="od"></div>
+                <div class="gogle"></div>
+                <div class="dzen"></div>
               </div>
             </div>
-          </form>
-          <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
-          <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
-          <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
-          <script>
-            const firebaseConfig = {
-              apiKey: "AIzaSyAwD3-zdkFjQvFYODIphvw5dObCqIiwZWo",
-              authDomain: "test-5f07a.firebaseapp.com",
-              databaseURL: "https://test-5f07a-default-rtdb.firebaseio.com",
-              projectId: "test-5f07a",
-              storageBucket: "test-5f07a.appspot.com",
-              messagingSenderId: "354523801244",
-              appId: "1:354523801244:web:45f6e36b1ff93f504c6f59",
-              measurementId: "G-PFQH7JZMV6",
-            };
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
-
-            const auth = firebase.auth();
-            const db = firebase.firestore();
-          </script>
-          <script src="js/app.js"></script>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div><img class="footer-logo" src="./img/fanta.png" alt="" /></div>
-      <div class="footer-info">
-        <div class="footer-topics">
-          <h3 class="footer_heading">О нас</h3>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Информация о разработчике</a>
-          </p>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Copyright information</a>
-          </p>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Политика конфиденциальности</a>
-          </p>
-        </div>
-        <div class="footer-topics">
-          <h3 class="footer_heading">Посетителям</h3>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Фотографы</a>
-          </p>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Лента</a>
-          </p>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Рекомендации</a>
-          </p>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Помощь</a>
-          </p>
-        </div>
-        <div class="footer-topics">
-          <h3 class="footer_heading">Фотографам</h3>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Статистика профиля</a>
-          </p>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Настройки продвижения</a>
-          </p>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Помощь</a>
-          </p>
-        </div>
-        <div class="footer-topics">
-          <h3 class="footer_heading">Контакты</h3>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Обратная связь</a>
-          </p>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">urart@yandex.ru</a>
-          </p>
-          <p class="footer_text">
-            <a class="footer_text_link" href="">Мы в соцсетях:</a>
-          </p>
-          <div class="footer_social">
-            <div><img src="./img/vk.svg" alt="vkontakte logo" /></div>
-            <div><img src="./img/telegram.svg" alt="telegram logo" /></div>
           </div>
+        </form>
+        <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+        <script>
+          const firebaseConfig = {
+            apiKey: "AIzaSyAwD3-zdkFjQvFYODIphvw5dObCqIiwZWo",
+            authDomain: "test-5f07a.firebaseapp.com",
+            databaseURL: "https://test-5f07a-default-rtdb.firebaseio.com",
+            projectId: "test-5f07a",
+            storageBucket: "test-5f07a.appspot.com",
+            messagingSenderId: "354523801244",
+            appId: "1:354523801244:web:45f6e36b1ff93f504c6f59",
+            measurementId: "G-PFQH7JZMV6",
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+
+          const auth = firebase.auth();
+          const db = firebase.firestore();
+        </script>
+        <script src="js/app.js"></script>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div><img class="footer-logo" src="./img/fanta.png" alt="" /></div>
+    <div class="footer-info">
+      <div class="footer-topics">
+        <h3 class="footer_heading">О нас</h3>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Информация о разработчике</a>
+        </p>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Copyright information</a>
+        </p>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Политика конфиденциальности</a>
+        </p>
+      </div>
+      <div class="footer-topics">
+        <h3 class="footer_heading">Посетителям</h3>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Фотографы</a>
+        </p>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Лента</a>
+        </p>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Рекомендации</a>
+        </p>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Помощь</a>
+        </p>
+      </div>
+      <div class="footer-topics">
+        <h3 class="footer_heading">Фотографам</h3>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Статистика профиля</a>
+        </p>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Настройки продвижения</a>
+        </p>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Помощь</a>
+        </p>
+      </div>
+      <div class="footer-topics">
+        <h3 class="footer_heading">Контакты</h3>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Обратная связь</a>
+        </p>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">urart@yandex.ru</a>
+        </p>
+        <p class="footer_text">
+          <a class="footer_text_link" href="">Мы в соцсетях:</a>
+        </p>
+        <div class="footer_social">
+          <div><img src="./img/vk.svg" alt="vkontakte logo" /></div>
+          <div><img src="./img/telegram.svg" alt="telegram logo" /></div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
