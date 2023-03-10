@@ -879,6 +879,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
 }
 
 .bm-desc {
@@ -886,6 +888,102 @@ body {
     flex-direction: column;
     align-content: flex-end;
     padding: 0 20px;
+}
+.bm-desc-img-1 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/1.png);
+}
+.bm-desc-img-2 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/2.png);
+}
+.bm-desc-img-3 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/3.png);
+}
+.bm-desc-img-4 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/4.png);
+}
+.bm-desc-img-5 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/5.png);
+}
+.bm-desc-img-6 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/6.png);
+}
+.bm-desc-img-7 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/7.png);
+}
+.bm-desc-img-8 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/8.png);
+}
+.bm-desc-img-9 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/9.png);
+}
+.bm-desc-img-10 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/10.png);
+}
+.bm-desc-img-11 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/11.png);
+}
+.bm-desc-img-12 {
+    background-image: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url(./assets/img/bookmark-img/12.png);
 }
 .bm-heading {
     font-weight: 700;
@@ -938,7 +1036,7 @@ body {
 }
 
 .settings-form {
-    background: #eeeeee;
+    background: #dcd1f2;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -1000,7 +1098,7 @@ input::-ms-value {
 
 /* Modal */
 
-.btn-primary{
+.btn-primary {
     background: unset !important;
     border: none !important;
     padding: unset !important;
